@@ -1,0 +1,14 @@
+{
+  "name": "mapple",
+  "version": "1.0.0",
+  "description": "MAPPLE — Premium Consumer Technology E-Commerce Platform",
+  "private": true,
+  "scripts": {
+    "start": "./start.sh",
+    "seed": "cd backend && ./venv/bin/python seed.py",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && ./venv/bin/pytest tests/test_api.py",
+    "test:frontend": "cd frontend && npm test",
+    "build:frontend": "cd frontend && npm run build"
+  }
+}
